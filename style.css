@@ -350,3 +350,31 @@ html {
 /* end of slideshow */
 
 /* END OF SECTION 1 STYLING */
+
+/* section 2 */
+
+.section-2 {
+  width: 100%;
+  height: 120vh;
+  padding: 10vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* section 2 heading */
+
+.section-2-heading {
+  font-size: 10rem;
+  font-weight: 200;
+  color: var(--black-color);
+}
+
+/* end of section 2 heading */
+
+/* section 2 images */
+
+/* end of section 2 images */
+
+/* end of section 2 */
