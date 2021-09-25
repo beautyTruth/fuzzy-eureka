@@ -90,9 +90,10 @@ html {
   height: 55rem;
   /* background-color: var(--rosewater-color); */
   transform-style: preserve-3d;
-  transform: rotatey(91deg);
+  transform: rotateX(0) rotateY(15deg) rotateZ(15deg);
   position: relative;
   top: -2rem;
+  transition: transform 0.5s;
 }
 
 .front-side,
