@@ -361,6 +361,7 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  background-color: var(--ivory-color);
 }
 
 /* section 2 heading */
@@ -369,6 +370,23 @@ html {
   font-size: 10rem;
   font-weight: 200;
   color: var(--black-color);
+  position: relative;
+  margin-bottom: 5rem;
+  z-index: 1;
+}
+
+.section-2-heading::before {
+  content: "";
+  width: 130%;
+  height: 30vw;
+  background-image: linear-gradient(var(--primary-color), var(--ivory-color));
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: skewX(-50deg);
+  transform-origin: left top;
+  z-index: -1;
+  border-radius: 1rem;
 }
 
 /* end of section 2 heading */
@@ -377,6 +395,9 @@ html {
 .iphones {
   height: 60vh;
   width: 50vw;
+  z-index: 10;
+  background-image: linear-gradient(var(--primary-color), var(--ivory-color));
+  border-radius: 0.5rem;
 }
 
 .iphones img {
@@ -384,7 +405,21 @@ html {
   height: inherit;
   object-fit: contain;
   position: absolute;
+  transition: opacity 3s;
 }
+
+.iphone-img-2 {
+  opacity: 0;
+}
+
+.iphones:hover .iphone-img-1 {
+  opacity: 0;
+}
+
+.iphones:hover .iphone-img-2 {
+  opacity: 1;
+}
+
 /* end of section 2 images */
 
 /* section 2 buttons */
