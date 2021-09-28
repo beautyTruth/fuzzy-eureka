@@ -616,3 +616,22 @@ html {
 /* end of section 3 content */
 
 /* end section 3 */
+
+/* section 4 */
+.section-4 {
+  height: 140vh;
+  padding: 20vh 0;
+}
+
+.watch-band-img {
+  width: 35rem;
+  height: 35rem;
+  object-fit: contain;
+}
+
+.watch-case-img {
+  width: 35rem;
+  height: 35rem;
+  object-fit: contain;
+}
+/* end of section 4 */
