@@ -13,6 +13,7 @@
 
 html {
   font-size: 62.5%;
+  background-color: var(--ivory-color);
 }
 
 :root {
@@ -476,6 +477,7 @@ html {
   background-color: var(--black-color);
   flex-direction: column;
   padding: 8rem 0;
+  clip-path: polygon(68% 0, 100% 0, 100% 97%, 38% 100%, 0 100%, 0 3%);
 }
 
 /* section 3 heading */
@@ -499,6 +501,16 @@ html {
   width: inherit;
 }
 
+.macbook-img-1 {
+  transform: rotateX(-80deg);
+  transform-origin: bottom;
+}
+
+.change .macbook-img-1 {
+  transform: rotateX(0);
+  transition: transform 3s;
+}
+
 .loading-wrapper {
   position: absolute;
   top: 6%;
@@ -510,6 +522,12 @@ html {
     ),
     url(images/MacBook/macbook-1-desktop.png) center no-repeat;
   z-index: -1;
+  opacity: 0;
+}
+
+.change .loading-wrapper {
+  opacity: 1;
+  transition: opacity 1s 2s;
 }
 
 .loading {
@@ -520,6 +538,11 @@ html {
   left: 0;
   background-color: var(--black-color);
   flex-direction: column;
+}
+
+.change .loading {
+  opacity: 0;
+  transition: 1s 5s;
 }
 
 .loading i {
@@ -542,9 +565,14 @@ html {
   position: absolute;
   top: 0;
   left: 0;
-  width: 50%;
+  width: 0;
   height: 100%;
   background-color: var(--rosewater-color);
+}
+
+.change .progress-bar::after {
+  width: 100%;
+  transition: width 1s 3s;
 }
 
 .macbook-info {
@@ -552,6 +580,11 @@ html {
   width: 70rem;
   text-align: center;
   opacity: 0;
+}
+
+.change .macbook-info {
+  opacity: 1;
+  transition: opacity 1s 6s;
 }
 
 .macbook-info-heading {
