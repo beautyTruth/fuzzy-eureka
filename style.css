@@ -965,4 +965,56 @@ html {
 }
 
 @media (max-width: 450px) {
+  html {
+    font-size: 35%;
+  }
+
+  .logo {
+    top: 10rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .logo i {
+    font-size: 30rem;
+  }
+
+  .navbar {
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+  }
+
+  .section-1-banner p {
+    text-align: center;
+  }
+
+  .iphones {
+    width: 75vw;
+  }
+
+  .section-3-heading {
+    font-size: 6rem;
+  }
+
+  .macbook-info {
+    width: 40rem;
+  }
+
+  .macbook-info-heading {
+    font-size: 3rem;
+  }
+
+  .macbook-price {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  .watch-btn {
+    right: 5%;
+  }
+
+  .icon-link img {
+    width: 6rem;
+  }
 }
