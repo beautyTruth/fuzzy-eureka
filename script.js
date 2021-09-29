@@ -1,10 +1,12 @@
 // common JS
 
-document.querySelectorAll(".watch-control, .controls a").forEach((control) => {
-  control.addEventListener("click", (e) => {
-    e.preventDefault();
+document
+  .querySelectorAll(".watch-control, .controls a, .iphone-btn")
+  .forEach((control) => {
+    control.addEventListener("click", (e) => {
+      e.preventDefault();
+    });
   });
-});
 
 // end of common JS
 
@@ -177,3 +179,7 @@ watchLeftControl.addEventListener("click", () => {
 });
 
 // end of section 4 script
+
+const year = document.querySelector(".year");
+const newYear = new Date().getFullYear();
+year.textContent = newYear;
